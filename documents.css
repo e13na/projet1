@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(circle, #000428, #004e92);
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #00e5ff;
+    text-shadow: 0 0 5px #00e5ff, 0 0 10px #00e5ff;
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    max-width: 800px; 
+}
+
+.content p {
+    font-size: 1.2em;
+    color: #eaeaea;
+}
+
+
+.home-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.home-button:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); 
+}
+
+.home-button img {
+    width: 50px; 
+    height: 50px; 
+    display: block;
+    margin: 10px;
+    transition: transform 0.3s; 
+}
+
+.home-button:hover img {
+    transform: rotate(360deg); 
+}
